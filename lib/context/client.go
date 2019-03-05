@@ -20,6 +20,7 @@ type TCPClient struct {
 	Interactive bool
 	Group       bool
 	Hash        string
+	Note        string
 	ReadLock    *sync.Mutex
 	WriteLock   *sync.Mutex
 }
@@ -48,7 +49,13 @@ func (c *TCPClient) OnelineDesc() string {
 
 func (c *TCPClient) Desc() string {
 	addr := c.Conn.RemoteAddr()
-	return fmt.Sprintf("[%s] %s://%s (connected at: %s) [%t]", c.Hash, addr.Network(), addr.String(), humanize.Time(c.TimeStamp), c.Interactive)
+	note := strings.TrimSpace(c.Note)
+
+	if len(note) > 0 && ! strings.HasSuffix(note, ",") {
+		note += ", "
+	}
+
+	return fmt.Sprintf("[%s] %s://%s (%sconnected at: %s) [%t]", c.Hash, addr.Network(), addr.String(), note, humanize.Time(c.TimeStamp), c.Interactive)
 }
 
 func (c *TCPClient) ReadUntilClean(token string) string {
