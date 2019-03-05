@@ -4,10 +4,10 @@ import (
 	"io"
 	"strings"
 
-	"github.com/WangYihang/Platypus/lib/context"
-	"github.com/WangYihang/Platypus/lib/util/log"
-	"github.com/WangYihang/Platypus/lib/util/reflection"
-	"github.com/WangYihang/Platypus/lib/util/str"
+	"Platypus/lib/context"
+	"Platypus/lib/util/log"
+	"Platypus/lib/util/reflection"
+	"Platypus/lib/util/str"
 	"github.com/chzyer/readline"
 )
 

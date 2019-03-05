@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/WangYihang/Platypus/lib/context"
-	"github.com/WangYihang/Platypus/lib/util/log"
-	"github.com/WangYihang/Platypus/lib/util/timeout"
+	"Platypus/lib/context"
+	"Platypus/lib/util/log"
+	"Platypus/lib/util/timeout"
 )
 
 func (dispatcher Dispatcher) Interact(args []string) {

@@ -3,8 +3,8 @@ package dispatcher
 import (
 	"fmt"
 
-	"github.com/WangYihang/Platypus/lib/context"
-	"github.com/WangYihang/Platypus/lib/util/log"
+	"Platypus/lib/context"
+	"Platypus/lib/util/log"
 )
 
 func (dispatcher Dispatcher) List(args []string) {

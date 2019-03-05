@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/WangYihang/Platypus/lib/util/hash"
-	"github.com/WangYihang/Platypus/lib/util/log"
-	"github.com/WangYihang/Platypus/lib/util/str"
+	"Platypus/lib/util/hash"
+	"Platypus/lib/util/log"
+	"Platypus/lib/util/str"
 	humanize "github.com/dustin/go-humanize"
 )
 

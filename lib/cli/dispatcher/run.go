@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/WangYihang/Platypus/lib/context"
-	"github.com/WangYihang/Platypus/lib/util/log"
+	"Platypus/lib/context"
+	"Platypus/lib/util/log"
 )
 
 func (dispatcher Dispatcher) Run(args []string) {

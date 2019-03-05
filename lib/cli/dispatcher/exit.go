@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/WangYihang/Platypus/lib/context"
-	"github.com/WangYihang/Platypus/lib/util/ui"
+	"Platypus/lib/context"
+	"Platypus/lib/util/ui"
 )
 
 func (dispatcher Dispatcher) Exit(args []string) {
